@@ -36,7 +36,7 @@ python3 main.py
 
 # Log Analyzer CLI
 cd log-analyzer-cli
-python3 log_analyzer.py -f sample.log
+python3 log_analyzer.py -f logs
 ```
 
 # 📁 **Структура репозитория**

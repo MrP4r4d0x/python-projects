@@ -164,6 +164,9 @@ def read_file(file: str, top_n: int, type: str) -> None:
         parser_file = NginxParser()
     elif type == "syslog":
         parser_file = SyslogParser()
+    else:
+        print("Введен некоректный тип файла (nginx/syslog)")
+        return
          
     with open(file, 'r') as f:
         for i in f:
@@ -184,9 +187,9 @@ def main() -> None:
 
     file_path = Path(args.file)
 
-    if file_path.is_file() and args.type in ["nginx", "syslog", "jsonApp"]:
+    if file_path.is_file() and args.type in ["nginx", "syslog"]:
         read_file(args.file, args.top_n, args.type)
-    elif args.type not in ["nginx", "syslog", "jsonApp"]:
+    elif args.type not in ["nginx", "syslog"]:
          print("Введен некоректный тип файла (nginx/syslog)")
     else:
         print("Такого файла не существует")

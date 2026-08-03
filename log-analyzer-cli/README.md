@@ -42,6 +42,7 @@
     python3 log_analyzer.py -f nginx_sample.log -t nginx --top 5
     ```
     или
+    
     ```bash
     python3 log_analyzer.py -f syslog_sample.log -t syslog --top 10
     ```
@@ -51,8 +52,8 @@
 *   -t, --type — (обязательный) тип логов: nginx или syslog.
 *   --top — число строк в каждом топе (по умолчанию 10).
 
-### 📄 Поддерживаемые форматы и примеры работы
-## 1. Nginx access.log
+## 📄 Поддерживаемые форматы и примеры работы
+### 1. Nginx access.log
 Ожидается комбинированный формат (combined):
 ```bash
 93.180.71.3 - - [17/May/2015:08:05:32 +0000] "GET /downloads/product_1 HTTP/1.1" 304 0 "-" "Debian APT-HTTP/1.3"
@@ -98,7 +99,7 @@ $ python3 log_analyzer.py -f nginx_sample.log -t nginx --top 2
                 - 17/May/2015:08:05:40 +0000: 1 раз (50.0%)
 ```
 
-## 2. Syslog (sshd)
+### 2. Syslog (sshd)
 **Распознаются четыре типа событий:**
 
 *   Failed password – неудачная попытка входа

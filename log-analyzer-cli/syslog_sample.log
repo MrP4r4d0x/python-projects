@@ -1,0 +1,37 @@
+Jun 22 10:15:32 server sshd[1234]: Failed password for root from 192.168.0.100 port 22 ssh2
+Jun 22 10:15:33 server sshd[1235]: Failed password for root from 192.168.0.100 port 22 ssh2
+Aug  5 14:23:11 myhost sshd[5678]: Failed password for invalid user admin from 10.0.0.55 port 2222 ssh2
+Aug  5 14:23:12 myhost sshd[5679]: Failed password for invalid user admin from 10.0.0.55 port 2222 ssh2
+Jul 15 08:44:00 gateway sshd[9012]: Invalid user test from 203.0.113.45 port 3333
+Jul 15 08:44:01 gateway sshd[9013]: Invalid user test from 203.0.113.45 port 3333
+Feb 29 12:00:00 leap sshd[9999]: Invalid user nobody from 198.51.100.77 port 4444
+Mar  1 00:05:01 debian sshd[1111]: Connection closed by authenticating user ubuntu 10.10.10.10 port 5555 [preauth]
+Mar  1 00:05:02 debian sshd[1112]: Connection closed by authenticating user ubuntu 10.10.10.10 port 5555 [preauth]
+Apr 12 11:22:33 centos sshd[2222]: Connection closed by invalid user guest 172.16.0.99 port 6666 [preauth]
+Apr 12 11:22:34 centos sshd[2223]: Connection closed by invalid user guest 172.16.0.99 port 6666 [preauth]
+May  9 16:10:45 rhel sshd[3333]: error: authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.50  user=root
+May  9 16:10:46 rhel sshd[3334]: error: authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.50  user=root
+Aug 30 01:02:03 arch sshd[4444]: error: authentication failure; logname=admin uid=1000 euid=1000 tty=/dev/pts/0 ruser=remote rhost=::1 user=john
+Aug 30 01:02:04 arch sshd[4445]: error: authentication failure; logname=admin uid=1000 euid=1000 tty=/dev/pts/0 ruser=remote rhost=::1 user=john
+Oct 10 10:10:10 box sshd[5555]: Failed password for user1 from 203.0.113.99 port 9999 ssh2
+Oct 10 10:10:11 box sshd[5556]: Failed password for user1 from 203.0.113.99 port 9999 ssh2
+Oct 10 10:10:12 box sshd[5557]: Failed password for user1 from 203.0.113.99 port 9999 ssh2
+Nov 11 11:11:11 fw sshd[6666]: Invalid user oracle from 172.16.0.1 port 1111
+Nov 11 11:11:12 fw sshd[6667]: Invalid user oracle from 172.16.0.1 port 1111
+Dec 25 00:00:01 santa sshd[7777]: Failed password for root from 10.0.0.99 port 22 ssh2
+Dec 25 00:00:02 santa sshd[7778]: Failed password for root from 10.0.0.99 port 22 ssh2
+Dec 25 00:00:03 santa sshd[7779]: Connection closed by authenticating user root 10.0.0.99 port 22 [preauth]
+Jan  1 00:00:00 newyear sshd[8888]: error: authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.100 user=admin
+Jan  1 00:00:01 newyear sshd[8889]: Invalid user admin from 192.168.100.100 port 1234
+Jan  1 00:00:02 newyear sshd[8890]: Failed password for admin from 192.168.100.100 port 1234 ssh2
+Feb 14 14:14:14 love sshd[9991]: Connection closed by invalid user cupid 1.2.3.4 port 12345 [preauth]
+Mar  8 08:08:08 women sshd[1000]: Failed password for invalid user root from 5.6.7.8 port 22 ssh2
+Apr  1 12:00:00 joke sshd[1001]: Invalid user april from 9.9.9.9 port 666
+May 17 20:30:00 norway sshd[2000]: Failed password for user2 from 11.22.33.44 port 22222 ssh2
+May 17 20:30:01 norway sshd[2001]: Failed password for user2 from 11.22.33.44 port 22222 ssh2
+Jun  1 01:01:01 summer sshd[3000]: Connection closed by authenticating user sun 203.0.113.10 port 1234 [preauth]
+Jul  4 04:04:04 usa sshd[4000]: Failed password for invalid user admin from 8.8.8.8 port 9999 ssh2
+Aug  8 08:08:08 eternity sshd[5000]: error: authentication failure; logname=null uid=0 euid=0 tty=ssh ruser= rhost=1.1.1.1 user=test
+Sep  9 09:09:09 autumn sshd[6000]: Invalid user guest from 2.2.2.2 port 7777
+Oct 31 23:59:59 halloween sshd[7000]: Connection closed by invalid user ghost 192.168.0.200 port 666 [preauth]
+Nov  1 00:00:00 allsaints sshd[8000]: Failed password for root from 192.168.0.200 port 22 ssh2

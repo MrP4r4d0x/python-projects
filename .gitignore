@@ -38,6 +38,5 @@ env/
 Thumbs.db
 
 # Logs
-*.log
 logs/
 *.Zone.Identifier

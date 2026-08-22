@@ -1,0 +1,51 @@
+{"timestamp": "2026-08-03T10:15:30Z", "service": "auth-service", "level": "INFO", "message": "User login successful", "user_id": 1024, "ip": "203.0.113.5", "duration_ms": 45}
+{"timestamp": "2026-08-03T10:15:31Z", "service": "payment-gateway", "level": "ERROR", "message": "Credit card declined", "user_id": 1024, "ip": "203.0.113.5", "status_code": 402, "duration_ms": 120, "error_code": "CARD_DECLINED"}
+{"timestamp": "2026-08-03T10:15:32Z", "service": "user-api", "level": "INFO", "message": "GET /users/1024", "ip": "198.51.100.7", "duration_ms": 12, "status_code": 200, "endpoint": "/users/1024"}
+{"timestamp": "2026-08-03T10:15:33Z", "service": "auth-service", "level": "WARN", "message": "Failed login attempt", "ip": "192.0.2.99", "user_agent": "Mozilla/5.0", "error_code": "INVALID_PASSWORD"}
+{"timestamp": "2026-08-03T10:15:34Z", "service": "notification-worker", "level": "DEBUG", "message": "Email sent", "user_id": 2055, "template": "welcome", "duration_ms": 230}
+{"timestamp": "2026-08-03T10:15:35Z", "service": "inventory-service", "level": "ERROR", "message": "Database timeout", "db_query": "SELECT * FROM products", "duration_ms": 5001, "status_code": 500}
+{"timestamp": "2026-08-03T10:15:36Z", "service": "auth-service", "level": "INFO", "message": "Token refreshed", "user_id": 1024, "ip": "203.0.113.5", "duration_ms": 30}
+{"timestamp": "2026-08-03T10:15:37Z", "service": "payment-gateway", "level": "INFO", "message": "Payment processed", "user_id": 307, "amount": 49.99, "currency": "USD", "status_code": 200, "duration_ms": 85}
+{"timestamp": "2026-08-03T10:15:38Z", "service": "user-api", "level": "ERROR", "message": "POST /users validation failed", "ip": "198.51.100.7", "status_code": 422, "error_details": {"field": "email", "reason": "invalid format"}}
+{"timestamp": "2026-08-03T10:15:39Z", "service": "auth-service", "level": "INFO", "message": "Logout", "user_id": 409, "ip": "203.0.113.5"}
+{"timestamp": "2026-08-03T10:15:40Z", "service": "notification-worker", "level": "WARN", "message": "SMTP connection slow", "smtp_server": "smtp.example.com", "duration_ms": 800}
+{"timestamp": "2026-08-03T10:15:41Z", "service": "payment-gateway", "level": "ERROR", "message": "Fraud suspicion", "user_id": 555, "ip": "198.18.0.12", "amount": 999.99, "risk_score": 0.95}
+{"timestamp": "2026-08-03T10:15:42Z", "service": "user-api", "level": "INFO", "message": "DELETE /users/307", "ip": "198.51.100.7", "duration_ms": 25, "status_code": 204}
+{"timestamp": "2026-08-03T10:15:43Z", "service": "inventory-service", "level": "INFO", "message": "Product stock updated", "product_id": 7712, "new_stock": 140}
+{"timestamp": "2026-08-03T10:15:44Z", "service": "auth-service", "level": "ERROR", "message": "Authentication service unavailable", "ip": "192.0.2.1", "status_code": 503, "error_code": "SERVICE_DOWN"}
+{"timestamp": "2026-08-03T10:15:45Z", "service": "notification-worker", "level": "INFO", "message": "Push notification sent", "device_token": "abcd1234", "platform": "ios"}
+{"timestamp": "2026-08-03T10:15:46Z", "service": "payment-gateway", "level": "INFO", "message": "Refund issued", "user_id": 1024, "amount": 15.00, "currency": "USD", "status_code": 200, "duration_ms": 210}
+{"timestamp": "2026-08-03T10:15:47Z", "service": "user-api", "level": "WARN", "message": "Rate limit exceeded", "ip": "192.0.2.99", "limit": 100, "window_sec": 60}
+{"timestamp": "2026-08-03T10:15:48Z", "service": "inventory-service", "level": "DEBUG", "message": "Cache miss for product 881", "cache_key": "product:881"}
+{"timestamp": "2026-08-03T10:15:49Z", "service": "auth-service", "level": "INFO", "message": "Password changed", "user_id": 1024, "ip": "203.0.113.5", "duration_ms": 75}
+{"timestamp": "2026-08-03T10:15:50Z", "service": "notification-worker", "level": "ERROR", "message": "Failed to render template", "template": "invoice", "user_id": 2055, "error_code": "TEMPLATE_ERROR"}
+{"timestamp": "2026-08-03T10:15:51Z", "service": "payment-gateway", "level": "INFO", "message": "3D Secure verification started", "user_id": 409, "ip": "198.51.100.22", "transaction_id": "txn_987654"}
+{"timestamp": "2026-08-03T10:15:52Z", "service": "user-api", "level": "INFO", "message": "GET /users?page=2", "ip": "203.0.113.5", "duration_ms": 45, "status_code": 200, "result_count": 25}
+{"timestamp": "2026-08-03T10:15:53Z", "service": "inventory-service", "level": "WARN", "message": "Low stock alert", "product_id": 452, "current_stock": 5}
+{"timestamp": "2026-08-03T10:15:54Z", "service": "auth-service", "level": "INFO", "message": "Two-factor authentication enabled", "user_id": 307, "ip": "198.18.0.1"}
+{"timestamp": "2026-08-03T10:15:55Z", "service": "notification-worker", "level": "INFO", "message": "SMS sent", "phone": "+1234567890", "provider": "Twilio"}
+{"timestamp": "2026-08-03T10:15:56Z", "service": "payment-gateway", "level": "ERROR", "message": "Gateway timeout", "upstream": "bank-api", "duration_ms": 15000, "status_code": 504}
+{"timestamp": "2026-08-03T10:15:57Z", "service": "user-api", "level": "DEBUG", "message": "Request headers", "headers": {"X-Request-Id": "req-111", "User-Agent": "curl/7.68.0"}}
+{"timestamp": "2026-08-03T10:15:58Z", "service": "inventory-service", "level": "INFO", "message": "Bulk import completed", "records_imported": 5000, "duration_ms": 3200}
+{"timestamp": "2026-08-03T10:15:59Z", "service": "auth-service", "level": "WARN", "message": "JWT token expired", "user_id": 2055, "ip": "203.0.113.5"}
+invalid json line that should be ignored
+{"timestamp": "2026-08-03T10:16:00Z", "service": "notification-worker", "level": "INFO", "message": "Email bounced", "email": "bounce@example.com", "bounce_reason": "mailbox full"}
+{"timestamp": "2026-08-03T10:16:01Z", "service": "payment-gateway", "level": "INFO", "message": "Subscription renewed", "user_id": 7712, "plan": "premium", "amount": 29.99, "duration_ms": 110}
+{"timestamp": "2026-08-03T10:16:02Z", "service": "user-api", "level": "ERROR", "message": "Internal server error", "ip": "192.0.2.1", "status_code": 500, "trace_id": "abc-500-xyz"}
+{"timestamp": "2026-08-03T10:16:03Z", "service": "inventory-service", "level": "INFO", "message": "Price updated", "product_id": 881, "old_price": 19.99, "new_price": 24.99}
+{"timestamp": "2026-08-03T10:16:04Z", "service": "auth-service", "level": "INFO", "message": "Session destroyed", "session_id": "sess_001", "user_id": 307}
+{"timestamp": "2026-08-03T10:16:05Z", "service": "notification-worker", "level": "WARN", "message": "Retry exhausted", "recipient": "user@example.com", "attempts": 5}
+{"timestamp": "2026-08-03T10:16:06Z", "service": "payment-gateway", "level": "INFO", "message": "Payout sent", "user_id": 555, "amount": 100.00, "currency": "EUR", "status_code": 200}
+{"timestamp": "2026-08-03T10:16:07Z", "service": "user-api", "level": "INFO", "message": "PUT /users/409", "ip": "203.0.113.5", "duration_ms": 33, "status_code": 200}
+{"timestamp": "2026-08-03T10:16:08Z", "service": "inventory-service", "level": "ERROR", "message": "Warehouse sync failed", "warehouse_id": "WH-01", "error_code": "SYNC_TIMEOUT"}
+{"timestamp": "2026-08-03T10:16:09Z", "service": "auth-service", "level": "DEBUG", "message": "Password hash computed", "algorithm": "bcrypt", "user_id": 7712}
+{"timestamp": "2026-08-03T10:16:10Z", "service": "notification-worker", "level": "INFO", "message": "Slack notification sent", "channel": "#alerts", "text": "High error rate detected"}
+{"timestamp": "2026-08-03T10:16:11Z", "service": "payment-gateway", "level": "WARN", "message": "Duplicate transaction attempt", "user_id": 1024, "idempotency_key": "key-123"}
+{"timestamp": "2026-08-03T10:16:12Z", "service": "user-api", "level": "INFO", "message": "GET /health", "ip": "198.18.0.99", "status_code": 200, "duration_ms": 1}
+{"timestamp": "2026-08-03T10:16:13Z", "service": "inventory-service", "level": "INFO", "message": "Product image uploaded", "product_id": 1245, "image_size_bytes": 204800}
+{"timestamp": "2026-08-03T10:16:14Z", "service": "auth-service", "level": "ERROR", "message": "LDAP connection failure", "ldap_server": "ldap.example.com", "error_code": "CONN_REFUSED"}
+{"timestamp": "2026-08-03T10:16:15Z", "service": "notification-worker", "level": "DEBUG", "message": "Template compiled", "template_name": "invoice", "render_time_ms": 5}
+{"timestamp": "2026-08-03T10:16:16Z", "service": "payment-gateway", "level": "INFO", "message": "Chargeback received", "user_id": 307, "amount": 49.99, "reason": "fraudulent"}
+{"timestamp": "2026-08-03T10:16:17Z", "service": "user-api", "level": "INFO", "message": "POST /users (batch)", "ip": "198.51.100.7", "duration_ms": 450, "records_created": 10, "status_code": 201}
+{"timestamp": "2026-08-03T10:16:18Z", "service": "inventory-service", "level": "WARN", "message": "Deprecated API used", "endpoint": "/v1/products", "client": "legacy-app"}
+{"timestamp": "2026-08-03T10:16:19Z", "service": "auth-service", "level": "INFO", "message": "OAuth2 code exchanged", "client_id": "mobile-app", "ip": "203.0.113.5"}
